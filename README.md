@@ -112,7 +112,7 @@ This is much better, but to be thorough, let's make one last refactor: Rails is 
 
 ```erb
 <% @posts.each do |post| %>
-  <div><%= link_to post.title, post_path(post) %></div>
+  <div><% = link_to post.title, post_path(post) %></div>
 <% end %>
 ```
 
